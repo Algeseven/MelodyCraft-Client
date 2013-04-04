@@ -1,0 +1,61 @@
+Changelog:
+
+Build 1.5.1-7.7.1.628
+	LexManos: Fix EntityPlayer passed to Bonemeal event.
+
+Build 1.5.1-7.7.1.627
+	LexManos: Fix off-by-one in rotated textures.
+	LexManos: Removed index bounds checking in some chunk functions, if you error blame Grum.
+
+Build 1.5.1-7.7.1.625
+	LexManos: Fix vanilla texture bug causing rotated textures to be placed wrong.
+
+Build 1.5.1-7.7.1.624
+	cpw
+		Updated FML:
+		MinecraftForge/FML@8b8837c9ff635d4988e0a1504fca38667825daf0 Fix NPE when branding isn't present
+
+Build 1.5.1-7.7.1.623
+	kraphteu: Remove unneeded SideOnly. ref: Buildcraft/Buildcraft#710
+
+Build 1.5.1-7.7.1.622
+	cpw
+		Removed obsolete patches
+		Updated FML:
+		MinecraftForge/FML@26ccb9106e443e664b0fdc1b95c3600b90ab2bc5 Change snooper/crash report brand handling. fmlbranding now loads another string!
+		MinecraftForge/FML@eff464cf0e656d92dfedf16e79e5cd6c36b9fc76 And the core patches for that
+
+Build 1.5.1-7.7.1.621
+	cpw: Sanity check the item ID for loaded liquid stacks better.
+
+Build 1.5.1-7.7.1.620
+	cpw: Make liquidstacks immutable in their type data. Sorry about this, but it makes things a lot easier.
+	cpw: Add in persistence code for LiquidTank. Using it should protect against liquids that get removed f.e. Closes #395
+
+Build 1.5.1-7.7.1.618
+	cpw: Fix up liquidstack so it knows about the texture sheet for it's icon
+
+Build 1.5.1-7.7.1.617
+	cpw: Fix AT file
+
+Build 1.5.1-7.7.1.616
+	cpw: Fix possible NPE in ChunkManager. Closes #478 in reality
+
+Build 1.5.1-7.7.1.615
+	cpw: made BlockFluid.theIcon protected
+	cpw: fix bug #489 from #429
+	cpw: Fix up some liquid logic
+
+Build 1.5.1-7.7.1.614
+	cpw: Fix hashCode
+	cpw
+		Updated FML:
+		MinecraftForge/FML@0d844874124649099dbcbb9ae2b36719e1dda25f Fix up derp in access transformer
+
+Build 1.5.1-7.7.1.629
+	cpw: Use the liquid name in liquid stack persistence. Closes #429
+
+Build 1.5.1-7.7.1.629
+	cpw
+		Updated FML:
+		MinecraftForge/FML@2bc6a0666f8a54f6b1fbc3398c6e3a385ecd35b5 Attempt to make any "default package" class public. This might fix problems with certain modloader mods that ship changes to vanilla classes.
